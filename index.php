@@ -5,8 +5,24 @@
   <body>
     <?php 
 // String length => strlen() :
+echo strlen("Bonjour à tous").'<br>'; // les caractères accentués sont compté 2 .
+// fonction comptant le nombre de mot dans une phrase :
+echo str_word_count("Bonjour à tous").'<br/>';
+echo str_word_count("salut l'ami").'<br/>';
+echo str_word_count("Bonjour a tous").'<br/>';
 
+//la répitition avec str_repeat("valeur a repeter" , "nbre de repitition":)
+echo str_repeat('bonjour <br> ', 7);
+// pour remplacer avec str_replace( prend 4 parametres):
+$texte ="Bonjour, comment allez-vous?";// phrase a utiliser pour le remplacement
+echo str_replace("Bonjour", "Bonsoir", $texte, $i). "<br/>";// bonsoir replace Bonjour:
+echo "nombre de remplacement : " .$i ."<br>";
+// str_replace(sensible a la casse) # str_ireplace(inssensible a la casse):
+// les fonctions "strtolower()" et "strtoupper()"
 
+$minmaj ="BonJouR, VouS allEZ BieN ?";
+echo strtolower($minmaj) . "<br>";
+echo strtoupper($minmaj). "<br>";
 
 
 
