@@ -24,6 +24,38 @@ $minmaj ="BonJouR, VouS allEZ BieN ?";
 echo strtolower($minmaj) . "<br>";
 echo strtoupper($minmaj). "<br>";
 
+// fonction de position "strpos()":
+
+echo strpos("Bonjour" , "o").  "<br>" ;
+echo strpos("Bonjour à tous" , "tous").  "<br>" ;
+echo strpos("Bonjour à tous" , "s").  "<br>" ;
+echo strpos("Bonjour à tous" , "e").  "<br>" ;// affiche rien !!
+
+// la fonction " htmlspecialechars() ": transforme les chaines de caractèrtes en véritable html; EXAMPLE /
+  $str = 'j\'aime le <strong>"PHP"</strong>';
+
+echo htmlspecialchars($str);
+echo htmlspecialchars_decode($str) ."<br>";// permet de transformer le html en string.
+
+// La fonction " nl2br " qui force le retour à la ligne => "new line to break" :
+
+echo nl2br("Bonjour !
+    Comment ça va ?"). "<br><br><br>";
+
+// La fonction " explode() " => transforme ch.caractere en un tableau "array " :
+$ch2tb = "Bonjour à tous ";
+print_r(explode(" " , $ch2tb)). "<br>";
+echo "<br><br>";// La fonction "str_split() " permet de transformer elle aussi un string en a array ,elle prend deux argument ("string a transf" , nbr de caractere a metter ds chaque case) , EXAMPLE:
+ print_r(str_split("hello world !", 2)) ."<br>";
+echo "<br><br>";
+// La fonction " implode() "=> trans ch.cart en tableau : EXAMPLE :
+$tb2ch = array('Bonjour', 'à', 'tous');
+echo implode(" /separateur/", $tb2ch)."<br>";
+
+// La fonction 
+
+
+
 
 
 
